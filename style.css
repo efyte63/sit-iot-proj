@@ -1,0 +1,174 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+width: 100%;  height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1));
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+  }
+  
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav .menu a:first-child {
+    color: #00b894;
+  }
+
+header h1{
+
+    text-align: center;
+    color: aliceblue;
+}
+body
+{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0.1),rgba(0,0,0,0.1)),url("/photos/background.jpg");
+
+
+}
+
+.PPP
+{
+color: white;
+width: 100%;
+position: absolute;
+top: 50%;
+transform: translatev(-50%);
+text-align: center;
+}
+
+
+.PPP h1{
+font-size:  70px;
+margin-top: 80px;
+
+}
+
+.PPP p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+
+width: 200px;
+padding:15px 0;
+text-align: center;
+margin:20px 10px;
+border-radius: 25px;
+font-weight: bold;
+border: 2px solid #009688;
+background: transparent;
+color:yellowgreen;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+
+span{
+background: whitesmoke;
+height: 100%;
+width: 0;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+
+}
+
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo {
+  color: red;
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+footer
+{
+
+
+  color: hwb(208 94% 0%);
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1));
+  min-height: 100px;
+  padding: 20px 50px;
+  bottom: 0%;
+
+
+}
+
+.company,.get,.follow{
+  display: inline-block;
+  vertical-align: top;
+
+
+}
+
+.company {
+  width: 30%;
+}
+
+.get {
+  width: 35%;
+}
+
+.follow {
+  width: 30%;
+}
+
